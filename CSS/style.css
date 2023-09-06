@@ -16,6 +16,7 @@ label {
 }
 input[type="text"],
 input[type="email"],
+input[type="password"],
 textarea,
 select {
   width: 100%;
@@ -45,44 +46,11 @@ header {
   padding: 10px;
 }
 
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+#sair{
+  color: #333;
 }
-
-.menu-icon span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  margin: 2px;
-  background-color: white;
-}
-
-.sidebar {
-  background-color: #111;
-  color: white;
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  transition: left 0.3s ease-in-out;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 50px 0;
-}
-
-.sidebar li {
-  padding: 10px;
-}
-
-.sidebar a {
-  color: white;
-  text-decoration: none;
+#login{
+  max-width: 500px;
 }
 
 .main {
