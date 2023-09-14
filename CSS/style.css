@@ -9,6 +9,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/*
 label {
   display: block;
   margin-top: 10px;
@@ -27,7 +28,7 @@ select {
   border-radius: 3px;
 }
 
-
+*/
 select {
   padding: 8px;
 }
@@ -58,14 +59,4 @@ header {
 
 .main {
   padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: flex;
-  }
-
-  .sidebar {
-    left: 0;
-  }
 }

@@ -66,33 +66,47 @@
       <div class="input-group mb-3">
         <div class="input-group mb-3">
           <label class="input-group-text " for="inputGroupSelect01">Empresa</label>
-          <select class="form-select" id="inputGroupSelect01">
+          <select class="form-select" id="selecao-empresa">
             <option selected>Escolha</option>
             <option value="1">Ontex</option>  
             <option value="2">GM Promo</option>
             <option value="3">Siga</option>
           </select>
-        </div>
-
-        <label class="input-group-text" for="inputGroupSelect01">Usuário</label>
-        <select class="form-select" id="inputGroupSelect01">
+          <label class="input-group-text" for="inputGroupSelect01">Usuário</label>
+        <select class="form-select" id="selecao-usuario">
           <option selected>Escolha um usuário</option>
           <option value="1">Maria Dos Santos</option>
           <option value="2">João Ferreira</option>
           <option value="3">Vitor Almeida</option>
         </select>
+        </div>
+
+        
+
+        <label class="input-group-text" for="inputGroupSelect01">Departamento</label>
+        <select class="form-select" id="selecao-depart">
+          <option selected>Escolha um departamento</option>
+          <option value="1">Suporte</option>
+          <option value="2">RH</option>
+          <option value="3">Gerência</option>
+        </select>
+        
       </div>
+
+      <label class="input-group-text" for="inputGroupSelect01">Departamento</label>
+      <select class="form-select" id="selecao-depart">
+        <option selected>Escolha um departamento</option>
+        <option value="1">Suporte</option>
+        <option value="2">RH</option>
+        <option value="3">Gerência</option>
+      </select>
+    </div>
+
     <form id="chamado-form">
       
       <label for="contato">Informações de Contato:</label>
       <input type="email" id="contato" name="contato" required>
 
-      <label for="departamento">Departamento:</label>
-      <select id="departamento" name="departamento">
-        <option value="baixa">Suporte</option>
-        <option value="media">RH</option>
-        <option value="alta">Gerência</option>
-      </select>
 
       <h3>Detalhes do Chamado</h3>
       <label for="titulo">Título do Chamado:</label>
