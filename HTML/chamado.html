@@ -61,7 +61,7 @@
 
   <div class="container">
     <h2>Formulário de Registro de Chamados</h2>
-
+    <hr>
     <h3>Informações do Solicitante</h3>
       <div class="input-group mb-3">
         <div class="input-group mb-3">
@@ -83,56 +83,62 @@
 
         
 
-        <label class="input-group-text" for="inputGroupSelect01">Departamento</label>
-        <select class="form-select" id="selecao-depart">
-          <option selected>Escolha um departamento</option>
-          <option value="1">Suporte</option>
-          <option value="2">RH</option>
-          <option value="3">Gerência</option>
-        </select>
+        
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="e-mail" placeholder="e-mail">
+          <label for="e-mail">E-mail</label>
+        </div>
         
       </div>
-
-      <label class="input-group-text" for="inputGroupSelect01">Departamento</label>
-      <select class="form-select" id="selecao-depart">
-        <option selected>Escolha um departamento</option>
-        <option value="1">Suporte</option>
-        <option value="2">RH</option>
-        <option value="3">Gerência</option>
-      </select>
-    </div>
-
-    <form id="chamado-form">
-      
-      <label for="contato">Informações de Contato:</label>
-      <input type="email" id="contato" name="contato" required>
+      <hr>
+      <h3>Detalhes do chamado</h3>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="titulo" placeholder="Título do chamado">
+          <label for="titulo">Título do chamado</label>
+        </div>
+      </div>
 
 
-      <h3>Detalhes do Chamado</h3>
-      <label for="titulo">Título do Chamado:</label>
-      <input type="text" id="titulo" name="titulo" required>
+      <div class="form-floating" id="desc">
+        <textarea class="form-control" placeholder="Descreva o chamado" id="floatingTextarea" rows="5"></textarea>
+        <label for="floatingTextarea">Descrição do chamado</label>
+      </div>
 
-      <label for="descricao">Descrição do Chamado:</label>
-      <textarea id="descricao" name="descricao" rows="4" required></textarea>
-
-      <label for="prioridade">Prioridade:</label>
-      <select id="prioridade" name="prioridade">
-        <option value="baixa">Baixa</option>
-        <option value="media">Média</option>
-        <option value="alta">Alta</option>
-        <option value="urgente">Urgente</option>
-      </select>
-
-      <label for="tipo">Tipo de Problema:</label>
-      <input type="text" id="tipo" name="tipo">
+      <div class="row g-2" id="desc">
+        <div class="col-md">
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>Setor</option>
+              <option value="1">TI</option>
+              <option value="2">RH</option>
+              <option value="3">Suporte</option>
+            </select>
+            <label for="floatingSelectGrid">Setor</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid">
+              <option selected>Prioridade</option>
+              <option value="1">Baixa</option>
+              <option value="2">Média</option>
+              <option value="3">Alta</option>
+            </select>
+            <label for="floatingSelectGrid">Prioridade</label>
+          </div>
+        </div>
+      </div>
 
       <label for="data-abertura">Data e Hora de Abertura:</label>
       <input type="datetime-local" id="data-abertura" name="data-abertura" required>
 
-      <!-- Continuar com os outros campos -->
+      <button type="submit" class="btn btn-dark">Registrar Chamado</button>
+      <a class="btn btn-danger" href="./lista.html" role="button">Cancelar</a>
+    </div>
 
-      <button type="submit">Registrar Chamado</button>
-    </form>
+    
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
