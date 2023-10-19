@@ -65,3 +65,7 @@ header {
 #desc{
   margin-bottom: 10px;
 }
+
+#salvar{
+  display: none;
+}

@@ -22,6 +22,8 @@ menuIcon.addEventListener('click', () => {
 
 /*-------chamado-----*/
 const saveBtn = document.getElementById('registrar');
+const edit = document.getElementById('editar');
+const save = document.getElementById('salvar');
 const cancelBtn = document.getElementById('cancel-btn');
 const firstNameInput = document.getElementById('nome');
 const lastNameInput = document.getElementById('sobrenome');
@@ -29,16 +31,7 @@ const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('senha');
 const errorMsg = document.getElementById('error-msg');
 
-saveBtn.addEventListener('click', () => {
-  editBtn.classList.remove('hide');
-  saveBtn.classList.add('hide');
-  cancelBtn.classList.add('hide');
-  firstNameInput.disabled = true;
-  lastNameInput.disabled = true;
-  emailInput.disabled = true;
-  passwordInput.disabled = true;
-  errorMsg.classList.add('hide');
-});
+
 
 $("#registrar").click(function(){
   $("p").hide(0);
@@ -46,3 +39,33 @@ $("#registrar").click(function(){
   $("form input").prop('disabled', true);
   $(this).hide(0);
 });
+
+/*-------editar-------*/
+function editar() {
+  alert("Foi");
+
+  const pri = document.getElementById("prioridade");
+  const setor = document.getElementById("setor");
+  const text = document.getElementById("texto");
+
+  var x = document.getElementById("salvar");
+  if (x.style.display == "none") {
+    x.style.display = "flex";
+    pri.removeAttribute("disabled");
+    setor.removeAttribute("disabled");
+    text.removeAttribute("disabled");
+  } else {
+    x.style.display = "none";
+    
+  }
+
+  
+
+}
+
+
+function salvar(){
+  pri.setAttribute('disabled', '');
+    setor.setAttribute('disabled');
+    text.setAttribute("disabled");
+}
